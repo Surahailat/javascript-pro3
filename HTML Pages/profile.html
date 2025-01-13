@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solveo</title>
+    <link rel="stylesheet" href="../CSS Pages/profile.css" />
+  </head>
+
+  <body>
+ 
+    <section class="profile">
+        <div class="div1" style="background-color: #3D6B77;">
+            <label for="profileImageInput">
+                <img src="..\Images\img\user (1).png" alt="user" class="img" id="userImage">
+            </label>
+            <input type="file" id="profileImageInput" style="display: none;" accept="image/*">
+            <div class="profile-info">
+                <span><strong style="font-size: 1.5rem;">First/Last Name</strong></span><br><br>
+                <span>Email@example.com</span>
+            </div>
+        </div>
+        <div class="div2">
+            <form style="margin:0 40px 40px 40px; text-align: left;" class="form">
+                <div>
+                    <p><strong style="    font-size: 4rem;">My Profile</strong></p>
+                    <hr style=" width: 136%;" class="hr">
+                </div>
+                <div class="flname">
+                    <div>
+                        <label for="firstName" class="label">First Name</label><br><br>
+                        <input type="text" id="firstName" class="input"
+                            placeholder="&nbsp;&nbsp;&nbsp;Enter your first name" disabled>
+                        <span id="fname-error" class="error-message"></span>
+                    </div>
+                    <div>
+                        <label for="lastName" class="label">Last Name</label><br><br>
+                        <input type="text" id="lastName" class="input"
+                            placeholder="&nbsp;&nbsp;&nbsp;Enter your last name" disabled>
+                        <span id="lname-error" class="error-message"></span>
+                    </div>
+                </div>
+                <div class="info">
+                    <div>
+                        <label for="email" class="label">Email</label><br><br>
+                        <input type="email" id="email" class="input" placeholder="&nbsp;&nbsp;&nbsp;Enter your email"
+                            disabled>
+                    </div>
+                    <div>
+                        <label for="gender" class="label">Gender</label><br><br>
+                        <select id="gender" class="input" disabled>
+                            <option value="" disabled selected style="text-align: center;">-- Select --</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                </div>
+                <div style="margin-top: 4%">
+                    <label for="password" class="label">Birthday</label><br><br>
+                    <input type="date" class="changepass"placeholder="&nbsp;&nbsp;&nbsp;Change password" disabled>
+                    <span id="date-error" class="error-message"></span><br>
+                </div>
+
+            </form>
+            <button class="botton" id="editButton">
+                <p style="display: inline;">Edit&nbsp;&nbsp;</p>
+                <img src="..\Images\img\pencil.png" alt="" style="width: 18%;">
+            </button>
+        </div>
+    </section>
+    <script src="..\JavaScript Pages\profile.js"></script>
+</body>
+
+</html>

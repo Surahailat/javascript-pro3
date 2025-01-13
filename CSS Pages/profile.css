@@ -1,0 +1,195 @@
+.profile {
+    display: flex;
+    justify-content: baseline;
+    border-radius: 15px;
+    margin: 4%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #F9FEFA;
+    height: 500px;
+}
+
+.img {
+    height: 90px;
+    width: 35%;
+    margin-top: 25%;
+    border: 3px solid #2C383C;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.div1 {
+    width: 20%;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px;
+
+
+}
+
+.div2 {
+
+    width: 60%;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.profile-info {
+    margin-top: 9%;
+    color: #F9FEFA;
+}
+
+.input {
+    width: 140%;
+    height: 40px;
+    box-sizing: border-box;
+    border: 2px solid #2C383C;
+    border-radius: 5px;
+}
+
+.flname {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7%;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4%;
+}
+
+.flname div,
+.info div {
+    width: 30%;
+}
+
+.label {
+    font-weight: bold;
+
+}
+
+.botton {
+    position: relative;
+    top: -73%;
+    right: -114%;
+    color: white;
+    background-color: #0A4556;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    transition: all 0.3s ease;
+    width: 11%;
+}
+
+.botton:hover {
+    background-color: #3E4A4F;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.error-message {
+    color: red;
+}
+
+.form {
+    margin: 0 40px 40px 40px;
+    text-align: left;
+}
+.changepass{
+    height: 40px;
+    box-sizing: border-box;
+    border: 2px solid #2C383C;
+    border-radius: 5px;
+    width: 42%;
+}
+
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        height: auto;
+        margin: 10px;
+    }
+
+    .div1 {
+        width: 90%;
+        padding: 20px;
+        background-color: #3D6B77;
+    }
+
+    .div2 {
+        width: 100%;
+    }
+
+    .img {
+        height: 100px;
+        width: 100px;
+        margin-top: 10px;
+    }
+
+    .profile-info {
+        margin-top: 10px;
+        color: #FFFFFF;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .flname,
+    .info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .flname div,
+    .info div {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .botton {
+        position: static;
+        margin-top: 20px;
+        width: 20%;
+        right: -76%;
+    }
+
+    .hr {
+        display: none;
+    }
+
+    .form {
+        margin: 0 40px 40px 0;
+    }
+    .changepass{
+        width: 100%;
+    }
+}
+
+
+
+/* footer */
+
+
+.text-lg-start {
+    background-color: #45526e;
+    width: 117.5%;
+    margin-left: -115px;
+    position: relative;
+    bottom: -100px;
+}
+
+@media (max-width: 426px) {
+    .text-lg-start {
+        background-color: #45526e;
+        width: 97.5%;
+        margin-left: 4px;
+        position: relative;
+        bottom: -100px;
+    }
+}
